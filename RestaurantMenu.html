@@ -4,11 +4,90 @@
         <title>In and Out Burgers</title>
     </head>
     <body>
-        <header>  
-            <img src="https://logos-world.net/wp-content/uploads/2022/02/In-N-Out-Burger-Symbol.png" alt="In and Out Burgers Logo">
-            <h1>In and Out Burgers</h1>
-        </header>
-        <main>
-        </main>
+        <section>
+            <header>  
+                <img src="https://logos-world.net/wp-content/uploads/2022/02/In-N-Out-Burger-Symbol.png" alt="In and Out Burgers Logo" width="400" height="400">
+                <h1>In and Out Burgers</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#order-form">Order Form</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        <section>
+            <main>
+                <section>
+                    <h2>Menu</h2>
+                    <article>
+                        <img src="https://www.in-n-out.com/Frontend-Assembly/INNOUT.PublicSite.Sitefinity/content/images/menu/double-double@3x.png?package=INNOUT" alt="Double Double" width="200" height="200">
+                        <h3>Double Double</h3>
+                        <p>A double double is a burger with two patties, two slices of cheese, and two slices of bacon.</p>
+                    </article>
+                    <article>
+                        <img src="https://www.in-n-out.com/Frontend-Assembly/INNOUT.PublicSite.Sitefinity/content/images/menu/cheeseburger@3x.png?package=INNOUT" alt="Cheeseburger" width="200" height="200">
+                        <h3>Cheeseburger</h3>
+                        <p>A cheeseburger is a burger with a slice of cheese on top of the burger.</p>
+                    </article>
+                    <article>
+                        <img src="https://www.in-n-out.com/Frontend-Assembly/INNOUT.PublicSite.Sitefinity/content/images/menu/hamburger@3x.png?package=INNOUT" alt="Hamburger" width="200" height="200">
+                        <h3>Hamburger</h3>
+                        <p>A hamburger is a burger with a single patty and no cheese.</p>
+                    </article>
+                    <article>
+                        <img src="https://www.in-n-out.com/Frontend-Assembly/INNOUT.PublicSite.Sitefinity/content/images/menu/fries@3x.png?package=INNOUT" alt="French Fries" width="300" height="200">
+                        <h3>French Fries</h3>
+                        <p>French fries are potatoes cut and fried in oil.</p>
+                    </article>
+                    <article>
+                        <img src="https://media.spokesman.com/photos/2019/03/26/INOUT_Cola.jpg" alt="Beverages" width="300" height="600">
+                        <h3>Beverages</h3>
+                        <p>Beverages are drinks you can get from the drink machine.</p>
+                    </article>
+                    <article>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/0e/9d/d3/3b/shakes.jpg" alt="Shakes" width="400" height="500">
+                        <h3>Shakes</h3>
+                        <p>Shakes are a type of drink that is made with ice cream and milk. We have vanilla, chocolate, and strawberry.</p>
+                    </article>
+                </section>
+                <section>
+                    <h2>Place Your Order</h2>
+                    <form>
+                        <label><input type="text" placeholder="Name"></label><br>
+                        <p>How many burgers would you like?</p>
+                        <p>Double Double<label><input type="number" min="0" max="10"></label><br>
+                        <p>Cheeseburger<label><input type="number" min="0" max="10"></label><br>
+                        <p>Hamburger<label><input type="number" min="0" max="10"></label><br>
+                        <br>
+                        <p>Would you like Fries with each burger?</p>    
+                        <label><input type="radio" name="fries" value="Yes">Yes</label><br>
+                        <label><input type="radio" name="fries" value="No">No</label><br>
+                        <p>If not how many?</p>
+                        <label><input type="number" min="0" max="10"></label><br>
+                        <br>
+                        <p>Would you like a Drink with each burger?</p>    
+                        <label><input type="radio" name="drink" value="Yes">Yes</label><br>
+                        <label><input type="radio" name="drink" value="No">No</label><br>
+                        <p>If not how many?</p>
+                        <label><input type="number" min="0" max="10"></label><br>
+                        <br>
+                        <p>What flavor of shake would you like and how many?</p>
+                        <label><input type="radio" name="flavor" value="Vanilla">Vanilla</label><br>
+                        <label><input type="radio" name="flavor" value="Chocolate">Chocolate</label><br>
+                        <label><input type="radio" name="flavor" value="Strawberry">Strawberry</label><br>
+                        <label><input type="number" min="0" max="10"></label><br>
+                        <br>
+                        <textarea placeholder="Special Requests"></textarea><br>
+                        <br><button type="submit">Go To Checkout</button>
+                    </form>
+                </section>
+            </main>
+        </section>
+        <section>
+            <footer>
+                <p>Made with love by @Dhill97 on GitHub</p>
+            </footer>
+        </section>
     </body>
 </html>
