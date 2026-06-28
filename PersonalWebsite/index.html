@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devin Hill | Personal Site</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Devin Hill</h1>
+        <p class="tagline">Software Developer</p>
+      </div>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container about-layout">
+        <!-- Replace src with your photo: images/headshot.jpg -->
+        <img
+          class="about-photo"
+          src="https://placehold.co/150x150/3a3a3a/888888?text=Photo"
+          alt="Photo of Devin Hill"
+        >
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Write a short introduction about yourself here. Include who you are,
+            what you do, what you are currently learning, and one personal interest
+            or goal. Keep it to three or four sentences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+          <article class="project-card">
+            <h3>Project Title 1</h3>
+            <p>Short description of your first project goes here.</p>
+            <div class="project-links">
+              <a href="#">View Code</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Title 2</h3>
+            <p>Short description of your second project goes here.</p>
+            <div class="project-links">
+              <a href="#">View Code</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Title 3</h3>
+            <p>Short description of your third project goes here.</p>
+            <div class="project-links">
+              <a href="#">View Code</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-wrapper">
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+
+          <div class="social-links">
+            <p>Connect with me:</p>
+            <ul>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">CodeDex</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Devin Hill. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

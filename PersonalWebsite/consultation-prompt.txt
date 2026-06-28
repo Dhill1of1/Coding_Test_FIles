@@ -1,0 +1,25 @@
+I'm wrapping up a beginner CSS course. The final project is a personal website in a PersonalWebsite folder (index.html + styles.css).
+
+REQUIREMENTS (must pass the course):
+- About section: short paragraph + optional photo
+- Projects/Work section: showcase projects with links to source code and demo
+- Contact section: ways to contact (form, social links, email)
+- CSS must demonstrate: selectors/declarations, color/size/font/text-align/background, box model (width/height/border/padding/margin), layout (display/positioning)
+
+CONSTRAINTS:
+- Beginner level — not too complicated but should look good
+- One page is fine
+- Flexible on design
+- ~3-5 hours of work
+- Current state: basic HTML skeleton exists; CSS file is empty; HTML links to styles.css but folder has style.css (needs fixing)
+
+Please provide a clear, step-by-step BUILD PLAN (not full code yet) covering:
+1. File setup fixes
+2. HTML structure (sections and key elements)
+3. CSS approach (what properties to use where, to hit course requirements)
+4. Simple design recommendation (colors, layout)
+5. Build order and time estimates
+6. Pass checklist before submitting
+7. Any clarifying questions for me about design/content
+
+Keep it concise and easy to follow — don't overwhelm me.
