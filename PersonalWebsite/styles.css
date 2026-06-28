@@ -126,7 +126,7 @@ h2 {
   text-align: left;
 }
 
-/* .project-grid — index.html line 49 */
+/* .project-grid — index.html line 48 */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +134,14 @@ h2 {
   justify-content: center;
 }
 
-/* .project-card — index.html lines 51, 60, 69 */
+/* #projects .container > p — index.html line 46 */
+#projects .container > p {
+  text-align: center;
+  color: #aaaaaa;
+  margin-bottom: 1.5rem;
+}
+
+/* .project-card — index.html lines 50, 59, 68 */
 .project-card {
   background-color: #2e2e2e;
   width: 260px;
@@ -159,13 +166,14 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* .project-links — index.html lines 54, 63, 72 */
+/* .project-links — index.html lines 53, 62, 71 */
 .project-links {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
-/* .project-links a — index.html lines 55–56, 64–65, 73–74 */
+/* .project-links a — index.html lines 55, 64, 73 */
 .project-links a {
   font-size: 0.875rem;
   font-weight: 500;
