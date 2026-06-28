@@ -33,7 +33,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* h2 — index.html lines 36, 48, 84 */
+/* h2 — index.html lines 35, 45, 80 */
 h2 {
   font-size: 1.75rem;
   font-weight: 600;
@@ -149,6 +149,8 @@ h2 {
   border: 1px solid #444444;
   border-radius: 8px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .project-card h3 — index.html lines 52, 61, 70 */
@@ -171,6 +173,7 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: auto;
 }
 
 /* .project-links a — index.html lines 55, 64, 73 */
@@ -180,81 +183,25 @@ h2 {
   color: #d0d0d0;
 }
 
-/* .contact-wrapper — index.html line 85 */
+/* .contact-wrapper — index.html line 81 */
 .contact-wrapper {
   max-width: 480px;
   margin: 0 auto;
 }
 
-/* .contact-form — index.html line 86 */
-.contact-form {
-  background-color: #2e2e2e;
-  padding: 2rem;
-  border: 1px solid #444444;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-/* .contact-form label — index.html lines 87, 90, 93 */
-.contact-form label {
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #cccccc;
-  margin-bottom: 0.35rem;
-}
-
-/* .contact-form input, textarea — index.html lines 88, 91, 94 */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #555555;
-  border-radius: 6px;
-  background-color: #1a1a1a;
-  color: #e8e8e8;
-  font-family: inherit;
-  font-size: 0.95rem;
-}
-
-/* .contact-form ::placeholder — index.html lines 88, 91, 94 */
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #666666;
-}
-
-/* .contact-form button — index.html line 96 */
-.contact-form button {
-  width: 100%;
-  padding: 0.75rem 1.5rem;
-  background-color: #444444;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
-  border: 1px solid #555555;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* .contact-form button:hover — index.html line 96 */
-.contact-form button:hover {
-  background-color: #555555;
-}
-
-/* .social-links — index.html line 99 */
+/* .social-links — index.html line 82 */
 .social-links {
   text-align: center;
 }
 
-/* .social-links p — index.html line 100 */
+/* .social-links p — index.html line 83 */
 .social-links p {
   font-size: 0.9rem;
   color: #888888;
   margin-bottom: 0.75rem;
 }
 
-/* .social-links ul — index.html line 101 */
+/* .social-links ul — index.html line 84 */
 .social-links ul {
   list-style: none;
   display: flex;
@@ -262,13 +209,13 @@ h2 {
   gap: 1.5rem;
 }
 
-/* .social-links a — index.html lines 102–104 */
+/* .social-links a — index.html lines 85–87 */
 .social-links a {
   font-weight: 500;
   color: #cccccc;
 }
 
-/* .site-footer — index.html line 113 */
+/* .site-footer — index.html line 97 */
 .site-footer {
   text-align: center;
   padding: 1.5rem 0;
@@ -276,7 +223,7 @@ h2 {
   border-top: 1px solid #333333;
 }
 
-/* .site-footer p — index.html line 115 */
+/* .site-footer p — index.html line 99 */
 .site-footer p {
   font-size: 0.875rem;
   color: #666666;
