@@ -1,3 +1,6 @@
 /.env
 /venv
 /wiki.py
+
+# Career transition analysis (personal)
+/career-transition-*.md
