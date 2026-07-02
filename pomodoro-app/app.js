@@ -19,6 +19,11 @@ const HOLD_MESSAGE = "protocol suspended.";
 
 const BUTTON_CLICK_SOUND = "./sounds/button-click.mp3";
 const BUTTON_HOVER_SOUND = "./sounds/button-hover.mp3";
+const FOCUS_BEAT_SOUND = "./sounds/cyberpunk-beat.mp3";
+
+const focusBeat = new Audio(FOCUS_BEAT_SOUND);
+focusBeat.loop = true;
+focusBeat.volume = 0.45;
 
 let myInterval;
 let isFirstStart = true;
@@ -73,6 +78,19 @@ const setSettingsLocked = (locked) => {
   });
 };
 
+const playFocusBeat = () => {
+  focusBeat.play().catch(() => {});
+};
+
+const pauseFocusBeat = () => {
+  focusBeat.pause();
+};
+
+const stopFocusBeat = () => {
+  focusBeat.pause();
+  focusBeat.currentTime = 0;
+};
+
 const enterFocusMode = () => {
   document.body.classList.add("is-engaged");
   appMessage.textContent = FOCUS_MESSAGE;
@@ -80,6 +98,8 @@ const enterFocusMode = () => {
   if (focusVideo) {
     focusVideo.play().catch(() => {});
   }
+
+  playFocusBeat();
 };
 
 const exitFocusMode = () => {
@@ -90,6 +110,8 @@ const exitFocusMode = () => {
     focusVideo.pause();
     focusVideo.currentTime = 0;
   }
+
+  stopFocusBeat();
 };
 
 const pauseFocusMode = () => {
@@ -99,6 +121,8 @@ const pauseFocusMode = () => {
   if (focusVideo) {
     focusVideo.pause();
   }
+
+  pauseFocusBeat();
 };
 
 const applySessionTime = () => {
