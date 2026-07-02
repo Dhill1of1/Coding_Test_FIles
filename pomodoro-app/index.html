@@ -4,35 +4,105 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Oswald:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
     <title>Deep Work Timer</title>
   </head>
   <body>
+    <div class="focus-bg" aria-hidden="true">
+      <video
+        class="focus-bg-video"
+        src="./videos/cyberpunk-city.mp4"
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="focus-bg-overlay"></div>
+    </div>
+
     <div class="app-container">
-      <h1>deep work</h1>
-      <div class="app-message">lock in. eliminate distractions.</div>
-      <div class="timer-frame">
-        <div class="app-circle">
-          <div class="circle-shape">
-            <div class="semi-circle right-side circle-mask"></div>
-            <div class="semi-circle right-side circle"></div>
-            <div class="semi-circle left-side circle-mask"></div>
-            <div class="semi-circle left-side circle"></div>
+      <div class="hud-shell">
+        <header class="hud-header">
+          <div class="hud-brand">
+            <span class="hud-diamond" aria-hidden="true"></span>
+            <span class="hud-brand-text">neural link // focus module</span>
           </div>
-          <div class="app-counter-box">
-            <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+
+          <h1 class="hud-title">Deep Work Protocol</h1>
+
+          <div class="hud-progress-block">
+            <span class="hud-meta">session load</span>
+            <div class="hud-progress">
+              <div class="progress-fill"></div>
+            </div>
           </div>
-          <button class="btn-start">engage</button>
+        </header>
+
+        <div class="hud-body">
+          <section class="timer-column">
+            <div class="app-message">lock in. eliminate distractions.</div>
+
+            <div class="timer-frame cp-frame">
+              <div class="frame-corner frame-corner--tl" aria-hidden="true"></div>
+              <div class="frame-corner frame-corner--br" aria-hidden="true"></div>
+
+              <div class="timer-readout">
+                <span class="minutes">25</span>
+                <span class="timer-sep">:</span>
+                <span class="seconds">00</span>
+              </div>
+
+              <div class="timer-track">
+                <div class="progress-fill timer-track-fill"></div>
+              </div>
+
+              <div class="timer-actions">
+                <button class="btn-start cp-btn cp-btn--primary">engage</button>
+                <button class="btn-pause cp-btn">hold</button>
+                <button class="btn-reset cp-btn">reset</button>
+              </div>
+            </div>
+
+            <section class="app-settings cp-frame">
+              <div class="settings-header">
+                <span class="settings-index">01</span>
+                <span>config // session length</span>
+              </div>
+
+              <div class="preset-row">
+                <button type="button" class="preset-btn" data-minutes="15">15</button>
+                <button type="button" class="preset-btn is-active" data-minutes="25">25</button>
+                <button type="button" class="preset-btn" data-minutes="45">45</button>
+                <button type="button" class="preset-btn" data-minutes="60">60</button>
+              </div>
+
+              <div class="setting-row">
+                <label for="session-minutes">custom duration (min)</label>
+                <div class="setting-controls">
+                  <input
+                    type="number"
+                    id="session-minutes"
+                    min="1"
+                    max="120"
+                    value="25"
+                  />
+                  <button type="button" class="btn-apply-time cp-btn">set</button>
+                </div>
+              </div>
+            </section>
+          </section>
         </div>
-      </div>
-      <div class="app-controls">
-        <button class="btn-pause">hold</button>
-        <button class="btn-reset">reset</button>
+
+        <footer class="hud-footer">
+          <span>sys.ver 2.077</span>
+          <span class="hud-footer-divider" aria-hidden="true"></span>
+          <span>ncpd clearance: restricted</span>
+        </footer>
       </div>
     </div>
+
+    <script src="./app.js"></script>
   </body>
-  <script src="./app.js"></script>
 </html>
