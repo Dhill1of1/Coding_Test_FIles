@@ -31,10 +31,11 @@ const appTimer = () => {
           bells.play();
           clearInterval(myInterval);
         }
-        startBtn.addEventListener("click", appTimer);
       };
       myInterval = setInterval(updateSeconds, 1000);
     } else {
       alert("Session has already started.");
     }
   };
+
+startBtn.addEventListener("click", appTimer);
