@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About // Devin Hill</title>
+    <meta
+      name="description"
+      content="About Devin Hill — UX/UI and product designer with frontend prototyping skills."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About // Devin Hill" />
+    <meta
+      property="og:description"
+      content="UX/UI and product design profile, interests, and contact links."
+    />
+    <meta property="og:image" content="./images/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">skip to content</a>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <div class="site is-live" id="site">
+      <div id="nav-root"></div>
+
+      <main id="main-content">
+        <section class="section" id="about">
+          <div class="section-header">
+            <span class="section-index">01</span>
+            <h2 class="section-title">// profile</h2>
+            <span class="section-rule" aria-hidden="true"></span>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-photo cp-frame cp-frame--corners">
+              <!-- ✏️ EDIT: drop your photo at ./images/profile.jpg -->
+              <img
+                class="about-photo-img"
+                src="./images/profile.jpg"
+                alt="Devin Hill profile photo"
+              />
+              <div class="ph-fallback about-photo-placeholder" style="display: none">
+                <span>[ profile.jpg ]</span>
+                <span class="ph-hint">drop your photo in /images</span>
+              </div>
+              <div class="about-photo-tag">designer profile</div>
+            </div>
+
+            <div class="about-bio cp-frame cp-frame--corners">
+              <h3 class="about-bio-title">bio.txt</h3>
+              <p class="about-bio-text">
+                <!-- ✏️ EDIT: your bio goes here -->
+                UX/UI and product designer with a software foundation, focused
+                on interfaces that feel cinematic, usable, and shippable. I
+                care about interaction details, clear hierarchy, accessible
+                systems, and prototypes that help teams see the product before
+                it is fully built. I am looking for roles where design craft,
+                product thinking, and frontend fluency work together.
+              </p>
+              <div class="about-links" id="about-links-root"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- interests: rendered from INTERESTS in content.js -->
+        <section class="section section--quiet" id="interests">
+          <div class="section-header">
+            <span class="section-index">01.b</span>
+            <h2 class="section-title">// creative signals</h2>
+            <span class="section-rule" aria-hidden="true"></span>
+          </div>
+          <div class="interest-grid" id="interest-root"></div>
+        </section>
+      </main>
+
+      <div id="footer-root"></div>
+    </div>
+
+    <script src="./content.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

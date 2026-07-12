@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devin Hill // UX/UI & Product Designer</title>
+    <meta
+      name="description"
+      content="Portfolio of Devin Hill, UX/UI and product designer focused on cinematic interfaces, systems thinking, and polished product experiences."
+    />
+    <!-- ✏️ EDIT: og:url and og:image should be absolute URLs once deployed,
+         e.g. https://yourname.github.io/portfolio/images/og-image.png -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Devin Hill // UX/UI & Product Designer" />
+    <meta
+      property="og:description"
+      content="UX/UI, product design, case studies, and polished interface work."
+    />
+    <meta property="og:image" content="./images/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">skip to content</a>
+
+    <!-- ============ BOOT INTRO (home page only) ============ -->
+    <div class="boot" id="boot">
+      <!-- Stage 0: press start (unlocks audio) -->
+      <div class="boot-stage boot-press" id="boot-press">
+        <img
+          class="boot-bg"
+          src="./images/cyberpunk-city-night-hero.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="boot-press-inner">
+          <div class="boot-eyebrow">Devin Hill</div>
+          <div class="boot-title-card">
+            <span class="boot-title-kicker">UX/UI · Product Design</span>
+            <span class="boot-title">Portfolio</span>
+          </div>
+          <button type="button" class="cp-btn cp-btn--primary boot-press-btn">
+            Enter portfolio
+          </button>
+        </div>
+      </div>
+
+      <!-- Stage 1: welcome + loading bar, then the screen splits open onto the site -->
+      <div class="boot-stage boot-load" id="boot-load">
+        <img
+          class="boot-bg"
+          src="./images/cyberpunk-city-night-hero.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="boot-load-inner">
+          <div class="boot-sequence-label">Opening</div>
+          <h1 class="boot-welcome">Devin Hill</h1>
+          <div class="boot-welcome-sub">Design portfolio</div>
+          <div class="boot-load-track">
+            <div class="boot-load-fill" id="boot-load-fill"></div>
+          </div>
+          <div class="boot-load-pct" id="boot-load-pct">0%</div>
+          <div class="boot-load-status" id="boot-load-status">preparing portfolio…</div>
+          <div class="boot-load-granted" id="boot-load-granted">portfolio ready</div>
+        </div>
+      </div>
+
+      <button class="boot-skip" id="boot-skip" type="button">skip intro ≫</button>
+    </div>
+
+    <!-- ============ GLOBAL FX ============ -->
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <!-- ============ HOME ============ -->
+    <div class="site" id="site">
+      <div id="nav-root"></div>
+
+      <main id="main-content">
+        <header class="hero">
+          <img
+            class="hero-bg"
+            src="./images/cyberpunk-city-night-hero.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="hero-inner">
+            <div class="hero-kicker">UX/UI Designer · Product Designer</div>
+            <h1 class="hero-name glitch" data-text="DEVIN HILL">DEVIN HILL</h1>
+            <div class="hero-role">
+              <span class="hero-role-text" id="hero-typed"></span><span class="hero-cursor" aria-hidden="true">▊</span>
+            </div>
+            <p class="hero-copy">
+              Product-minded designer creating polished interfaces, clear flows,
+              and prototypes that help teams see the experience before it ships.
+            </p>
+            <div class="hero-actions" aria-label="primary actions">
+              <a class="cp-btn cp-btn--primary" href="./projects.html">View case studies</a>
+              <a class="cp-btn" href="mailto:devinhill544@gmail.com">Contact Devin</a>
+            </div>
+
+            <!-- memory-card style module menu -->
+            <div class="hero-menu-label">// explore the portfolio</div>
+            <div class="home-card-grid">
+              <a href="./about.html" class="home-card cp-frame cp-frame--corners">
+                <span class="home-card-index">01</span>
+                <span class="home-card-name">// profile</span>
+                <span class="home-card-desc">designer story &amp; links</span>
+              </a>
+              <a href="./experience.html" class="home-card cp-frame cp-frame--corners">
+                <span class="home-card-index">02</span>
+                <span class="home-card-name">// experience</span>
+                <span class="home-card-desc">roles, impact &amp; process</span>
+              </a>
+              <a href="./credentials.html" class="home-card cp-frame cp-frame--corners">
+                <span class="home-card-index">03</span>
+                <span class="home-card-name">// credentials</span>
+                <span class="home-card-desc">tools, systems &amp; craft</span>
+              </a>
+              <a href="./projects.html" class="home-card cp-frame cp-frame--corners">
+                <span class="home-card-index">04</span>
+                <span class="home-card-name">// projects</span>
+                <span class="home-card-desc">product thinking &amp; UI work</span>
+              </a>
+            </div>
+
+          </div>
+        </header>
+      </main>
+
+      <div id="footer-root"></div>
+    </div>
+
+    <script src="./content.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
