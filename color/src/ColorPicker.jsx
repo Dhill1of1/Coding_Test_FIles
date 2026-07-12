@@ -37,6 +37,16 @@ function ColorPicker() {
     if (e.key === "Enter" || e.key === " ") {
       handleClick(colors[index]);
     }
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+      e.preventDefault();
+      const next = (index + 1) % colors.length;
+      document.querySelectorAll(".color-item")[next].focus();
+    }
+    if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+      e.preventDefault();
+      const prev = (index - 1 + colors.length) % colors.length;
+      document.querySelectorAll(".color-item")[prev].focus();
+    }
   };
 
   return (
